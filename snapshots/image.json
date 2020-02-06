@@ -1,0 +1,157 @@
+{
+  "ops": [
+    {
+      "attributes": { "italic": true, "bold": true },
+      "insert": "Editor’s Note: "
+    },
+    {
+      "attributes": { "italic": true },
+      "insert": "This post is also available "
+    },
+    {
+      "attributes": {
+        "italic": true,
+        "link": "https://medium.com/@moz2000tw/mozilla%E9%96%8B%E7%99%BC%E8%80%85%E5%B0%8F%E8%81%9A-%E5%9B%9E%E9%A1%A7%E4%BA%9E%E6%B4%B2%E5%B7%A1%E8%BF%B4%E5%B1%95-%E5%B1%95%E6%9C%9B2020-85a04a098088"
+      },
+      "insert": "in 繁體中文 (Chinese) on the Mozilla Taiwan blog"
+    },
+    {
+      "attributes": { "italic": true },
+      "insert": ". (Updated February 4, 2020.)"
+    },
+    { "insert": "\n\n이상해씨\n" },
+    {
+      "attributes": {
+        "data": [
+          {
+            "image": "https://s3.ap-northeast-2.amazonaws.com/workspace.storage.alphamon.xyz/221311ea75f03831aa207268e3da93b6/images/0x0/7086ec9c975a229c3b6af3a9b3943093a52e34caedb220d4.png",
+            "attributes": { "caption": "이상해씨", "ratio": 1, "width": 728 }
+          },
+          {
+            "image": "https://s3.ap-northeast-2.amazonaws.com/workspace.storage.alphamon.xyz/221311ea75f03831aa207268e3da93b6/images/0x0/c091c9a3ed85cb776bd7b0030c72fdd0d535b377f5c21eaa.png",
+            "attributes": { "caption": "이상해풀", "ratio": 1, "width": 728 }
+          },
+          {
+            "image": "https://s3.ap-northeast-2.amazonaws.com/workspace.storage.alphamon.xyz/221311ea75f03831aa207268e3da93b6/images/0x0/5e4aac1f36adee1b78a0867b52c7cdcd35b38867a69a5c0f.png",
+            "attributes": { "caption": "이상해꽃", "ratio": 1, "width": 728 }
+          }
+        ]
+      },
+      "insert": {
+        "image-grid": {
+          "data": [
+            {
+              "image": "https://s3.ap-northeast-2.amazonaws.com/workspace.storage.alphamon.xyz/221311ea75f03831aa207268e3da93b6/images/0x0/7086ec9c975a229c3b6af3a9b3943093a52e34caedb220d4.png",
+              "attributes": { "caption": "이상해씨", "ratio": 1, "width": 728 }
+            },
+            {
+              "image": "https://s3.ap-northeast-2.amazonaws.com/workspace.storage.alphamon.xyz/221311ea75f03831aa207268e3da93b6/images/0x0/c091c9a3ed85cb776bd7b0030c72fdd0d535b377f5c21eaa.png",
+              "attributes": { "caption": "이상해풀", "ratio": 1, "width": 728 }
+            },
+            {
+              "image": "https://s3.ap-northeast-2.amazonaws.com/workspace.storage.alphamon.xyz/221311ea75f03831aa207268e3da93b6/images/0x0/5e4aac1f36adee1b78a0867b52c7cdcd35b38867a69a5c0f.png",
+              "attributes": { "caption": "이상해꽃", "ratio": 1, "width": 728 }
+            }
+          ]
+        }
+      }
+    },
+    { "insert": "\n디그다\n" },
+    {
+      "attributes": {
+        "data": [
+          {
+            "image": "https://s3.ap-northeast-2.amazonaws.com/workspace.storage.alphamon.xyz/221311ea75f03831aa207268e3da93b6/images/0x0/4098c696a5aa6b92cc3f1eb64ea970c3a5db17b7f6a7a154.png",
+            "attributes": { "caption": "디그다", "ratio": 1, "width": 728 }
+          },
+          {
+            "image": "https://s3.ap-northeast-2.amazonaws.com/workspace.storage.alphamon.xyz/221311ea75f03831aa207268e3da93b6/images/0x0/22c1cb3a83a076ee350a42e732be11b94d47325bf812f731.png",
+            "attributes": { "caption": "닥트리오", "ratio": 1, "width": 431 }
+          }
+        ]
+      },
+      "insert": {
+        "image-grid": {
+          "data": [
+            {
+              "image": "https://s3.ap-northeast-2.amazonaws.com/workspace.storage.alphamon.xyz/221311ea75f03831aa207268e3da93b6/images/0x0/4098c696a5aa6b92cc3f1eb64ea970c3a5db17b7f6a7a154.png",
+              "attributes": { "caption": "디그다", "ratio": 1, "width": 728 }
+            },
+            {
+              "image": "https://s3.ap-northeast-2.amazonaws.com/workspace.storage.alphamon.xyz/221311ea75f03831aa207268e3da93b6/images/0x0/22c1cb3a83a076ee350a42e732be11b94d47325bf812f731.png",
+              "attributes": { "caption": "닥트리오", "ratio": 1, "width": 431 }
+            }
+          ]
+        }
+      }
+    },
+    { "insert": "\n\n" },
+    {
+      "insert": {
+        "image": "https://s3.ap-northeast-2.amazonaws.com/workspace.storage.alphamon.xyz/221311ea75f03831aa207268e3da93b6/images/0x0/96b28ad756d15d905f1fcc6a4dfcacc1f6ceb7f512a3c7ac.png"
+      },
+      "attributes": {
+        "style": "float: left; margin: 10px 15px 5px 3px;",
+        "caption": "파이리",
+        "width": 175,
+        "ratio": "1",
+        "inline-comment": []
+      }
+    },
+    { "insert": "파이리\n" },
+    {
+      "insert": {
+        "image": "https://s3.ap-northeast-2.amazonaws.com/workspace.storage.alphamon.xyz/221311ea75f03831aa207268e3da93b6/images/0x0/fd0710fdf89c6ecd34567cb86a372c757e5df9f4ae0aa8e9.png"
+      },
+      "attributes": {
+        "width": 175,
+        "height": "auto",
+        "caption": "리자드",
+        "ratio": "1",
+        "inline-comment": []
+      }
+    },
+    {
+      "attributes": {
+        "style": "float: right; margin: 10px 3px 5px 15px;",
+        "caption": "리자몽",
+        "width": 175,
+        "ratio": "1",
+        "inline-comment": []
+      },
+      "insert": {
+        "image": "https://s3.ap-northeast-2.amazonaws.com/workspace.storage.alphamon.xyz/221311ea75f03831aa207268e3da93b6/images/0x0/1bc28a23893de4feb3cfe36e057e7c9fa433c5c85b0ea2b1.png"
+      }
+    },
+    { "insert": "\n리자몽\n\n\n\n\n\n\n\n일반 사진\n" },
+    {
+      "insert": {
+        "image": "https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2020/01/IMG_2308-scaled.jpg"
+      },
+      "attributes": {
+        "width": 641,
+        "ratio": 1.3333333333333333,
+        "caption": "",
+        "inline-comment": []
+      }
+    },
+    { "insert": "\n" },
+    { "attributes": { "bold": true }, "insert": "It’s a wrap!" },
+    { "attributes": { "header": 3 }, "insert": "\n" },
+    { "insert": "November 2019 was a busy month for the " },
+    {
+      "attributes": {
+        "link": "https://developer.mozilla.com/events/developer-roadshow-2019-asia/"
+      },
+      "insert": "Mozilla Developer Roadshow"
+    },
+    {
+      "insert": ", with stops in five Asian cities —Tokyo, Seoul, Taipei, Singapore, and Bangkok. Today, we’re releasing a playlist of the talks presented in Asia.\nWe are extremely pleased to include subtitles for all these talks in languages spoken in the countries on this tour: Japanese, Korean, Chinese, Thai, as well as English. One talk, Hui Jing Chen’s “Making CSS from Good to Great: The Power of Subgrid”, was delivered in "
+    },
+    {
+      "attributes": { "link": "https://en.wikipedia.org/wiki/Singlish" },
+      "insert": "Singlish (a Singaporean creole)"
+    },
+    { "insert": " at the event in Singapore!\n" }
+  ]
+}

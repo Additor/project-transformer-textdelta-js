@@ -1,0 +1,390 @@
+{
+  "ops": [
+    { "insert": "H1" },
+    { "attributes": { "header": 1 }, "insert": "\n" },
+    { "insert": "H2" },
+    { "attributes": { "header": 2 }, "insert": "\n" },
+    { "insert": "unordered list" },
+    { "attributes": { "list": "bullet" }, "insert": "\n" },
+    { "insert": "unordered list" },
+    { "attributes": { "indent": 1, "list": "bullet" }, "insert": "\n" },
+    { "insert": "unordered list" },
+    { "attributes": { "indent": 2, "list": "bullet" }, "insert": "\n" },
+    { "insert": "unordered list" },
+    { "attributes": { "indent": 3, "list": "bullet" }, "insert": "\n" },
+    { "insert": "unordered list" },
+    { "attributes": { "indent": 4, "list": "bullet" }, "insert": "\n" },
+    { "insert": "\nordered list" },
+    { "attributes": { "list": "ordered", "start": 1 }, "insert": "\n" },
+    { "insert": "ordered list" },
+    { "attributes": { "indent": 1, "list": "ordered" }, "insert": "\n" },
+    { "insert": "ordered list" },
+    { "attributes": { "indent": 2, "list": "ordered" }, "insert": "\n" },
+    { "insert": "ordered list" },
+    { "attributes": { "indent": 3, "list": "ordered" }, "insert": "\n" },
+    { "insert": "ordered list" },
+    { "attributes": { "indent": 4, "list": "ordered" }, "insert": "\n" },
+    { "insert": "\nchecked list" },
+    { "attributes": { "list": "checked" }, "insert": "\n" },
+    { "insert": "checked list" },
+    { "attributes": { "list": "checked", "indent": 1 }, "insert": "\n" },
+    { "insert": "checked list" },
+    { "attributes": { "list": "checked", "indent": 2 }, "insert": "\n" },
+    { "insert": "checked list" },
+    { "attributes": { "list": "checked", "indent": 3 }, "insert": "\n" },
+    { "insert": "checked list" },
+    { "attributes": { "list": "checked", "indent": 4 }, "insert": "\n" },
+    { "insert": "\nunchecked list" },
+    { "attributes": { "list": "unchecked" }, "insert": "\n" },
+    { "insert": "unchecked list" },
+    { "attributes": { "indent": 1, "list": "unchecked" }, "insert": "\n" },
+    { "insert": "unchecked list" },
+    { "attributes": { "indent": 2, "list": "unchecked" }, "insert": "\n" },
+    { "insert": "unchecked list" },
+    { "attributes": { "indent": 3, "list": "unchecked" }, "insert": "\n" },
+    { "insert": "unchecked list" },
+    { "attributes": { "indent": 4, "list": "unchecked" }, "insert": "\n" },
+    { "insert": "blockquote" },
+    { "attributes": { "blockquote": true }, "insert": "\n" },
+    { "insert": "blockquote" },
+    { "attributes": { "blockquote": true }, "insert": "\n" },
+    { "insert": "blockquote" },
+    { "attributes": { "blockquote": true }, "insert": "\n" },
+    { "insert": "\n" },
+    {
+      "attributes": {
+        "inline-comment": ["comment_48be11ea5561cb68bc37c64b6ccfedc8"]
+      },
+      "insert": "comment"
+    },
+    { "insert": "\n" },
+    { "attributes": { "bold": true }, "insert": "bold" },
+    { "insert": "\n" },
+    { "attributes": { "italic": true }, "insert": "italic" },
+    { "insert": "\n" },
+    { "attributes": { "underline": true }, "insert": "underline" },
+    { "insert": "\n" },
+    { "attributes": { "strike": true }, "insert": "strikethrough" },
+    { "insert": "\n" },
+    { "attributes": { "code": true }, "insert": "inline code" },
+    { "insert": "\n" },
+    { "attributes": { "link": "http://additor.io" }, "insert": "link" },
+    { "insert": "\n" },
+    {
+      "attributes": {
+        "inline-comment": ["comment_48be11ea14b0f444bc375b01887a6b80"],
+        "link": "http://additor.io",
+        "code": true,
+        "strike": true,
+        "underline": true,
+        "italic": true,
+        "bold": true
+      },
+      "insert": "mixed"
+    },
+    { "insert": "\n\nconst {" },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "  es5Paths," },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "  esNextPaths," },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "} = require('./scripts/shared/pathsByLanguageVersion');" },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n\n" },
+    { "insert": "const OFF = 0;" },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "const ERROR = 2;" },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n\n" },
+    { "insert": "module.exports = {" },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "  extends: [" },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "    'fbjs'," },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "    'prettier'" },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "  ]," },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n\n" },
+    {
+      "insert": "  // Stop ESLint from looking for a configuration file in parent folders"
+    },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "  root: true," },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n\n" },
+    {
+      "insert": "  plugins: ['jest', 'no-for-of-loops', 'react', 'react-internal'],"
+    },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n\n" },
+    { "insert": "  parser: 'babel-eslint'," },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "  parserOptions: {" },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "    ecmaVersion: 8," },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "    sourceType: 'script'," },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "    ecmaFeatures: {" },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "      experimentalObjectRestSpread: true," },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "    }," },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "  }," },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    {
+      "insert": "  // We're stricter than the default config, mostly. We'll override a few rules"
+    },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "  // and then enable some React specific ones." },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "  globals: {" },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "    SharedArrayBuffer: true," },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n\n" },
+    { "insert": "    spyOnDev: true," },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "    spyOnDevAndProd: true," },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "    spyOnProd: true," },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "    __PROFILE__: true," },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "    __UMD__: true," },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "    __EXPERIMENTAL__: true," },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "    trustedTypes: true," },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "  }," },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "};" },
+    { "attributes": { "code-block": "javascript" }, "insert": "\n" },
+    { "insert": "\n" },
+    {
+      "attributes": {
+        "data": [
+          {
+            "image": "https://s3.ap-northeast-2.amazonaws.com/workspace.storage.alphamon.xyz/221311ea75f03831aa207268e3da93b6/images/0x0/f75bcb20313c39fe3a11979f4c993f55fb463a9923112a00.png",
+            "attributes": {
+              "caption": "이상해씨",
+              "ratio": 1,
+              "width": 728,
+              "inline-comment": ["comment_48bf11eabc41185bbc37c7eb27451efc"]
+            }
+          },
+          {
+            "image": "https://s3.ap-northeast-2.amazonaws.com/workspace.storage.alphamon.xyz/221311ea75f03831aa207268e3da93b6/images/0x0/642a4a7853f666a8cbaed1d1771c5030b4287fbbf31e2910.png",
+            "attributes": { "caption": "이상해풀", "ratio": 1, "width": 728 }
+          },
+          {
+            "image": "https://s3.ap-northeast-2.amazonaws.com/workspace.storage.alphamon.xyz/221311ea75f03831aa207268e3da93b6/images/0x0/5c378ad5169727886541f95d071ceb5daf5b2ad3465733ea.png",
+            "attributes": { "caption": "이상해꽃", "ratio": 1, "width": 728 }
+          }
+        ]
+      },
+      "insert": {
+        "image-grid": {
+          "data": [
+            {
+              "image": "https://s3.ap-northeast-2.amazonaws.com/workspace.storage.alphamon.xyz/221311ea75f03831aa207268e3da93b6/images/0x0/f75bcb20313c39fe3a11979f4c993f55fb463a9923112a00.png",
+              "attributes": {
+                "caption": "이상해씨",
+                "ratio": 1,
+                "width": 728,
+                "inline-comment": ["comment_48bf11eabc41185bbc37c7eb27451efc"]
+              }
+            },
+            {
+              "image": "https://s3.ap-northeast-2.amazonaws.com/workspace.storage.alphamon.xyz/221311ea75f03831aa207268e3da93b6/images/0x0/642a4a7853f666a8cbaed1d1771c5030b4287fbbf31e2910.png",
+              "attributes": { "caption": "이상해풀", "ratio": 1, "width": 728 }
+            },
+            {
+              "image": "https://s3.ap-northeast-2.amazonaws.com/workspace.storage.alphamon.xyz/221311ea75f03831aa207268e3da93b6/images/0x0/5c378ad5169727886541f95d071ceb5daf5b2ad3465733ea.png",
+              "attributes": { "caption": "이상해꽃", "ratio": 1, "width": 728 }
+            }
+          ]
+        }
+      }
+    },
+    { "insert": "\n" },
+    {
+      "attributes": {
+        "inline-comment": ["comment_48bf11eaeee11bd5bc370186a2416c3b"],
+        "caption": "리자몽",
+        "width": 291,
+        "ratio": "1"
+      },
+      "insert": {
+        "image": "https://s3.ap-northeast-2.amazonaws.com/workspace.storage.alphamon.xyz/221311ea75f03831aa207268e3da93b6/images/0x0/36074a62f7913559ac44c53949bab9f6d90ffb66d3e51e62.png"
+      }
+    },
+    {
+      "insert": "table1",
+      "attributes": {
+        "code": true,
+        "strike": true,
+        "underline": true,
+        "italic": true,
+        "bold": true
+      }
+    },
+    {
+      "attributes": {
+        "table": {
+          "data-cell": "cell-3dxj",
+          "data-row": "row-fmzn",
+          "data-table": "table-add5",
+          "data-width": "241px"
+        }
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "table": {
+          "data-cell": "cell-lmsa",
+          "data-row": "row-fmzn",
+          "data-table": "table-add5",
+          "data-width": "459px"
+        }
+      },
+      "insert": "\n"
+    },
+    { "insert": "table1" },
+    {
+      "attributes": {
+        "table": {
+          "data-cell": "cell-fv0h",
+          "data-row": "row-fmzn",
+          "data-table": "table-add5",
+          "data-width": "64px"
+        }
+      },
+      "insert": "\n"
+    },
+    { "insert": "table1" },
+    {
+      "attributes": {
+        "table": {
+          "data-cell": "cell-y0ia",
+          "data-row": "row-cjib",
+          "data-table": "table-add5",
+          "data-width": null
+        }
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "table": {
+          "data-cell": "cell-pctl",
+          "data-row": "row-cjib",
+          "data-table": "table-add5",
+          "data-width": null
+        }
+      },
+      "insert": "\n"
+    },
+    { "insert": "table1" },
+    {
+      "attributes": {
+        "table": {
+          "data-cell": "cell-d2l9",
+          "data-row": "row-cjib",
+          "data-table": "table-add5",
+          "data-width": null
+        }
+      },
+      "insert": "\n"
+    },
+    { "insert": "table1" },
+    {
+      "attributes": {
+        "table": {
+          "data-cell": "cell-d2l9",
+          "data-row": "row-cjib",
+          "data-table": "table-add5",
+          "data-width": null
+        }
+      },
+      "insert": "\n"
+    },
+    { "insert": "table1" },
+    {
+      "attributes": {
+        "table": {
+          "data-cell": "cell-dmsp",
+          "data-row": "row-46ly",
+          "data-table": "table-add5",
+          "data-width": null
+        }
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "table": {
+          "data-cell": "cell-0fhn",
+          "data-row": "row-46ly",
+          "data-table": "table-add5",
+          "data-width": null
+        }
+      },
+      "insert": "\n"
+    },
+    { "insert": "table1" },
+    {
+      "attributes": {
+        "table": {
+          "data-cell": "cell-dpp3",
+          "data-row": "row-46ly",
+          "data-table": "table-add5",
+          "data-width": null
+        }
+      },
+      "insert": "\n"
+    },
+    { "insert": "table1" },
+    {
+      "attributes": {
+        "table": {
+          "data-cell": "cell-xs2e",
+          "data-row": "row-661a",
+          "data-table": "table-add5",
+          "data-width": null
+        }
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "table": {
+          "data-cell": "cell-u8sw",
+          "data-row": "row-661a",
+          "data-table": "table-add5",
+          "data-width": null
+        }
+      },
+      "insert": "\n"
+    },
+    { "insert": "table1" },
+    {
+      "attributes": {
+        "table": {
+          "data-cell": "cell-gf5i",
+          "data-row": "row-661a",
+          "data-table": "table-add5",
+          "data-width": null
+        }
+      },
+      "insert": "\n"
+    },
+    { "insert": "\n" },
+    {
+      "attributes": { "height": "400px", "width": "98%" },
+      "insert": {
+        "embed": "https://www.youtube.com/embed/a3ICNMQW7Ok?showinfo=0"
+      }
+    },
+    { "insert": "\n" }
+  ]
+}

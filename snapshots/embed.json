@@ -1,0 +1,20 @@
+{
+  "ops": [
+    { "insert": "Embeds" },
+    { "insert": "\n", "attributes": { "header": 2 } },
+    {
+      "insert": {
+        "embed": "https://www.youtube.com/embed/UdyjeUwPz_E?showinfo=0"
+      },
+      "attributes": { "width": "535", "height": "400px" }
+    },
+    { "insert": "\n" },
+    {
+      "insert": {
+        "embed": "https://www.youtube.com/embed/D1PvIWdJ8xo?showinfo=0"
+      },
+      "attributes": { "width": "585", "height": "213" }
+    },
+    { "insert": "\n" }
+  ]
+}

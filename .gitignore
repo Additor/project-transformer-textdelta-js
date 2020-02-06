@@ -1,0 +1,9 @@
+# Mac
+.DS_Store
+
+# WebStorm 설정 파일
+.idea/
+.vscode/
+
+# Modules
+node_modules

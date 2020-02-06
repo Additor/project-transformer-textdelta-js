@@ -1,0 +1,212 @@
+{
+  "ops": [
+    {
+      "attributes": {
+        "inline-comment": ["comment_48bb11ea8fa1c1cda33902f763b0ab6b"],
+        "bold": true
+      },
+      "insert": "mocha-chai-snapshot"
+    },
+    { "attributes": { "header": 1 }, "insert": "\n" },
+    {
+      "insert": "Hook for chai to generate and matche snapshot in testing node application just like in jest",
+      "attributes": { "italic": true }
+    },
+    { "insert": "\n" },
+    { "attributes": { "header": 2 }, "insert": "\n" },
+    { "attributes": { "strike": true }, "insert": "Getting Started" },
+    { "attributes": { "header": 2 }, "insert": "\n" },
+    { "insert": "Install mocha-chai-snapshot using " },
+    {
+      "attributes": { "link": "https://www.npmjs.com/", "code": true },
+      "insert": "npm"
+    },
+    { "insert": ":\nnpm install --save-dev mocha-chai-snapshot" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    {
+      "insert": "Example Useage\n// first.spec.js  => The first file test-runner executes or add these below lines at the top of every spec file"
+    },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "const chai = require('chai');" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "const chaiSnapshot = require('mocha-chai-snapshot');" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "const { expect } = chai;" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "chai.use(chaiSnapshot);" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": " " },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": " " },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "//component.spec.js" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "describe(\"GET /hello\", () =>{" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "    it(\"Should say Hello to Starnger\", () => {" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "        return request(app)" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "        .get('/hello')" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "        .set('Accept', 'application/json')" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "        .expect('Content-Type', /json/)" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "        .expect(200)" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "        .then(({ body }) => {" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "            expect(body).to.matchSnapshot(this);" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "        });" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "    });" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": " " },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "    it(\"Should say Hello to Jhon\", () => {" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "        return request(app)" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "        .get('/hello')" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "        .query({ name: 'Jhon' })" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "        .set('Accept', 'application/json')" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "        .expect('Content-Type', /json/)" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "        .expect(200)" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "        .then(({ body }) => {" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "            expect(body).to.matchSnapshot(this);" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "        });" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "    });" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "});" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "It will automatically create(if " },
+    { "attributes": { "code": true }, "insert": "CHAI_SNAPSHOT_UPDATE" },
+    { "insert": " environment variable to " },
+    { "attributes": { "code": true }, "insert": "true" },
+    { "insert": ") " },
+    { "attributes": { "code": true }, "insert": "__snapshots__" },
+    {
+      "insert": " folder in same folder of specs and snapshot file like below\nexports[`GET /hello : Should say Hello to Starnger 1`] = \"Hello, stranger!\";"
+    },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "exports[`GET /hello : Should say Hello to Jhon 1`] = {" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "  \"name\": \"Jhon\"," },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "  \"say\": \"Hello\"" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "};" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    {
+      "attributes": { "strike": true },
+      "insert": "If the found snapshot does not match with the actuals and you want to update the related snapshots, use "
+    },
+    { "attributes": { "strike": true, "code": true }, "insert": "isForced" },
+    { "attributes": { "strike": true }, "insert": " in " },
+    { "attributes": { "strike": true, "code": true }, "insert": "expect" },
+    { "attributes": { "strike": true }, "insert": " chain." },
+    { "insert": "\n" },
+    {
+      "attributes": {
+        "inline-comment": ["comment_48bb11ea35d1c887a339c93d040bde0c"]
+      },
+      "insert": "Example "
+    },
+    {
+      "attributes": {
+        "inline-comment": [
+          "comment_48bb11ea35d1c887a339c93d040bde0c",
+          "comment_48bb11ea7181ce77a3394b761df4ab9b"
+        ]
+      },
+      "insert": "Useage"
+    },
+    {
+      "insert": "\n// first.spec.js  => The first file testrunner executes or add these below lines at the top of every spec file"
+    },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "const chaiSnapshot =require('mocha-chai-snapshot');" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": " " },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "chai.use(chaiSnapshot);" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": " " },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": " " },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "//component.spec.js" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "it(\"Should say Hello\", () => {" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "    return request(app)" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "      .get('/hello')" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "      .query({ name: 'Jack' })" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "      .set('Accept', 'application/json')" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "      .expect('Content-Type', /json/)" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "      .expect(200)" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "      .then(({ body }) => {" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "        expect(body).isForced.to.matchSnapshot(this);" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "      });" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "});" },
+    { "attributes": { "code-block": "plain" }, "insert": "\n" },
+    { "insert": "Or\n" },
+    { "attributes": { "underline": true }, "insert": "Set " },
+    {
+      "attributes": { "underline": true, "code": true },
+      "insert": "CHAI_SNAPSHOT_UPDATE = true"
+    },
+    {
+      "attributes": { "underline": true },
+      "insert": " to update the snapshots if there is any mismatch in any of the spec files even if "
+    },
+    { "attributes": { "underline": true, "code": true }, "insert": "isForced" },
+    { "attributes": { "underline": true }, "insert": " is not used." },
+    { "insert": "\n" },
+    {
+      "attributes": { "link": "http://additor.io", "bold": true },
+      "insert": "Warning!:"
+    },
+    { "attributes": { "link": "http://additor.io" }, "insert": " Do not set " },
+    {
+      "attributes": { "link": "http://additor.io", "code": true },
+      "insert": "CHAI_SNAPSHOT_UPDATE = true"
+    },
+    {
+      "attributes": { "link": "http://additor.io" },
+      "insert": " in build pipeline. If it is set, build will never fail even if there is no snapshots available in the "
+    },
+    {
+      "attributes": { "link": "http://additor.io", "code": true },
+      "insert": "__snapshots__"
+    },
+    { "attributes": { "link": "http://additor.io" }, "insert": " folder." },
+    { "insert": "\n" },
+    { "attributes": { "bold": true }, "insert": "Notes:" },
+    { "insert": " It is tested in " },
+    { "attributes": { "code": true }, "insert": "mocha v5.2.0" },
+    { "insert": " and " },
+    { "attributes": { "code": true }, "insert": "chai v4.2.0" },
+    { "insert": "." },
+    { "insert": "\n", "attributes": { "header": 2 } }
+  ]
+}
