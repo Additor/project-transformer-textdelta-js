@@ -1,14 +1,11 @@
 import deltaToPlaintext from '../../lib/deltaToText/deltaToText';
-import client from '../../database/db';
+import { inject } from '../../database/db';
 import AppError from '../../utils/appError';
 
 export const injectCtrl = async (req, res, next) => {
   const { ws_id, note_id, txt_ops, ctime, utime } = req.body;
-
   const elsIndex = 'document';
-
   let plainText = '';
-  let elsResponse = {};
 
   //ws_id, note_id, txt_ops, ctime, utime Key 검사
   if (!ws_id || !note_id || !txt_ops || !ctime || !utime) {
@@ -23,7 +20,8 @@ export const injectCtrl = async (req, res, next) => {
       next,
     );
   }
-  //ws_id, note_id, txt_ops Type 검사
+
+  //ws_id, note_id, txt_ops, ctime, utime Type 검사
   if (
     typeof ws_id != 'string' ||
     typeof note_id != 'string' ||
@@ -44,10 +42,9 @@ export const injectCtrl = async (req, res, next) => {
   }
 
   //Plain Text로 변환
-  try {
-    plainText = await deltaToPlaintext({ ops: txt_ops });
-  } catch (error) {
-    return next(
+  plainText = await deltaToPlaintext({ ops: txt_ops }).catch(err => {
+    console.log(err);
+    throw next(
       new AppError(
         400,
         'SE02',
@@ -57,22 +54,12 @@ export const injectCtrl = async (req, res, next) => {
       res,
       next,
     );
-  }
+  });
 
-  //Elasticsearch Inject
+  //ElasticSearch Inject
   try {
-    elsResponse = await client.index({
-      index: elsIndex,
-      id: ws_id + note_id, // PK
-      body: {
-        ws_id: ws_id,
-        note_id: note_id,
-        text: plainText,
-        ctime: ctime,
-        utime: utime,
-      },
-    });
-  } catch (error) {
+    await inject({ elsIndex, ws_id, note_id, plainText, ctime, utime });
+  } catch (err) {
     return next(
       new AppError(500, 'SE98', 'ElasticSearch Error (엘라스틱서치 에러)'),
       req,
